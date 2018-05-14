@@ -1,0 +1,17 @@
+# Indexes
+indexes:
+   - CREATE INDEX idx_test ON test(test_col)
+   - CREATE INDEX idx_test_1 ON test(test_col_1)
+
+# Views
+views:
+   - CREATE VIEW vw_test 
+     AS 
+     SELECT *
+     FROM test
+     WHERE test_col = 'DUMMY'
+   - CREATE VIEW vw_test_1 
+     AS 
+     SELECT *
+     FROM test
+     WHERE test_col_1 = 'DUMMY'
